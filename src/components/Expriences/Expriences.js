@@ -1,25 +1,22 @@
+import { Box } from '@mui/material'
 import React from 'react'
+import CircleWithLabel from '../CircleWithLabel/CircleWithLabel'
 import './Expriences.css'
 
 function Expriences() {
   return (
-    <div>
-      <div className='circle_container'>
-        <div className="circle">1+</div>
-        <span>Years</span>
-        <span>Exprience</span>
-      </div>
-      <div className='circle_container'>
-        <div className="circle">5+</div>
-        <span>Completed</span>
-        <span>Projects</span>
-      </div>
-      <div className='circle_container'>
-        <div className="circle">1+</div>
-        <span>Companies</span>
-        <span>Work</span>
-      </div>
-    </div>
+    <Box
+      sx={{
+        display: 'flex',
+        direction: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <CircleWithLabel label1="Years" label2="Exprience" num={1} />
+      <CircleWithLabel label1="Completed" label2="Projects" num={5} />
+      <CircleWithLabel label1="Companies" label2="Work" num={1} />
+    </Box>
   )
 }
 
