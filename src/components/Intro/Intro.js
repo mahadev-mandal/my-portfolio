@@ -7,21 +7,19 @@ import StyledButton from '../StyledButton/StyledButton';
 
 function Intro() {
   return (
-    <Grid container sx={{ mt: 8,}}>
+    <Grid container sx={{ mt: 8, }}>
       {/* intro text button and social icons */}
       <Grid item md={6} >
-        <Typography variant="h2">
-          Hy! I Am
-        </Typography>
-        <Typography variant="h2" color='#fca61f'>
-          Mahadev Mandal
+        <Typography component="h1" variant='h2'>
+          <span>Hy! I Am</span> <br />
+          <span style={{ color: '#fca61f' }}>Mahadev Mandal</span>
         </Typography>
         <Box
           sx={{
-            mt: 3
+            mt: 3,
           }}
         >
-          <StyledButton name="Hire Me" />
+          <StyledButton name="Hire Me" /> &nbsp;&nbsp;&nbsp;&nbsp;
           <StyledButton name="Download CV" />
         </Box>
         {/* social icons left side */}

@@ -5,17 +5,20 @@ import StyledButton from '../StyledButton/StyledButton'
 function Contact() {
   return (
     <Grid container sx={{ mt: 10 }}>
-      <Grid item md={6}>
-        <Typography variant='h2'>Get in Touch</Typography>
-        <Typography variant='h2'>Contact me</Typography>
+      <Grid itemxs={12} md={5}>
+        <Typography variant='h3'>
+          <span>Get in Touch</span><br />
+          <span style={{ color: '#fca61f' }}>Contact me</span>
+        </Typography>
       </Grid>
-      <Grid item md={4}>
+      <Grid item xs={12} md={5} sx={{ mt: { xs: 4, md: 0 } }}>
         <TextField
           variant='outlined'
           placeholder='Full name'
           sx={{
             width: '100%',
-            mb: 5
+            mb: 5,
+
           }}
         /><br />
         <TextField
@@ -36,7 +39,7 @@ function Contact() {
           <StyledButton name="Send" num="" />
         </Box>
       </Grid>
-    </Grid>
+    </Grid >
   )
 }
 

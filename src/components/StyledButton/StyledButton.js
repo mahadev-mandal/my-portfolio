@@ -3,7 +3,7 @@ import React from 'react'
 
 function StyledButton({name}) {
   return (
-    <Button variant='outlined' sx={{m:2}}>
+    <Button variant='outlined'>
       {name}
     </Button>
   )

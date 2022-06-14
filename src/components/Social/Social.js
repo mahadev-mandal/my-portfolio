@@ -7,7 +7,7 @@ import linkedinLogo from '../../assets/images/linkedin.png';
 import instagramLogo from '../../assets/images/instagram.png';
 
 const SocialIcon = styled('img')({
-  width: 50,
+  width: 40,
   padding: 15,
   '&:hover': {
     transform: 'translateY(-5px)',
@@ -19,7 +19,8 @@ function Social() {
     <Box
       sx={{
         p: 2,
-        mt: 8
+        mt: 8,
+        mb:5,
       }}
     >
       <a href='#'>
