@@ -1,4 +1,5 @@
-import { Container } from '@mui/material';
+import React, { useState } from 'react';
+import { Container, CssBaseline } from '@mui/material';
 import Contact from './components/Contact/Contact';
 import Expriences from './components/Expriences/Expriences';
 import Footer from './components/Footer/Footer';
@@ -7,33 +8,25 @@ import Navbar from './components/Navbar/Navbar';
 import RecentProjects from './components/RecentProjects/RecentProjects';
 import Services from './components/Services/Services';
 import './App.css'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-const theme = createTheme({
-  typography: {
-    fontFamily: [
-      'Gumela'
-    ].join(','),
-  },
-});
-theme.typography.h3 = {
-  fontSize: '40px',
-  [theme.breakpoints.up('md')]: {
-    fontSize: '50px',
-  },
-};
-theme.typography.h2 = {
-  fontSize: '50px',
-  [theme.breakpoints.up('md')]: {
-    fontSize: '60px',
-  },
-};
+import { ThemeProvider } from '@mui/material/styles';
+import { darkTheme, lightTheme } from './utils/themes';
+
+export const themeContext = React.createContext();
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const darkModeToggle = () => {
+    setIsDarkMode(!isDarkMode);
+  }
+  console.log(isDarkMode)
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <Container className="App" >
-          <Navbar />
+      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+        <CssBaseline />
+        <Container className="App">
+          <themeContext.Provider value={darkModeToggle}>
+            <Navbar />
+          </themeContext.Provider>
           <Intro />
           <Services />
           <Expriences />

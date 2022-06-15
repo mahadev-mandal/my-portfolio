@@ -7,7 +7,7 @@ import linkedinLogo from '../../assets/images/linkedin.png';
 import instagramLogo from '../../assets/images/instagram.png';
 
 const SocialIcon = styled('img')({
-  width: 40,
+  width: 70,
   padding: 15,
   '&:hover': {
     transform: 'translateY(-5px)',
