@@ -23,16 +23,16 @@ function Social() {
         mb:5,
       }}
     >
-      <a href='#'>
+      <a href='/'>
         <SocialIcon src={githubLogo} alt="" xs />
       </a>
-      <a href='#'>
+      <a href='/'>
         <SocialIcon src={stackoverflowLogo} alt="" />
       </a>
-      <a href='#'>
+      <a href='/'>
         <SocialIcon src={linkedinLogo} alt="" />
       </a>
-      <a href='#'>
+      <a href='/'>
         <SocialIcon src={instagramLogo} alt="" />
       </a>
     </Box>
