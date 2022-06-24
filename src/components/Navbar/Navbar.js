@@ -14,11 +14,11 @@ function Navbar() {
 
           }}
         >
-          <Link className='navLink' underline='none'>Home</Link>
-          <Link className='navLink' underline='none'>Services</Link>
-          <Link className='navLink' underline='none'>Exprience</Link>
-          <Link className='navLink' underline='none'>Projects</Link>
-          <Link className='navLink' underline='none'>Testimonial</Link>
+          <Link href='#' className='navLink' underline='none'>Home</Link>
+          <Link href='#' className='navLink' underline='none'>Services</Link>
+          <Link href='#' className='navLink' underline='none'>Exprience</Link>
+          <Link href='#' className='navLink' underline='none'>Projects</Link>
+          <Link href='#' className='navLink' underline='none'>Testimonial</Link>
         </Grid>
         <Grid item sx={{ ml: { md: 5 } }} >
           <StyledButton name="Contact" num="" />
