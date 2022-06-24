@@ -5,8 +5,8 @@ import emoji1 from "../../assets/images/emoji1.png";
 
 function Services() {
   return (
-    <Box sx={{ mt: 10 }}>
-      <Typography variant="h3" component="h2">
+    <Box sx={{ mt: 10 }} id="services">
+      <Typography variant="h3" component="h2" textAlign="center">
         <span>My Awesome</span> <br />
         <span style={{ color: "#fca61f" }}>Services</span>
       </Typography>
@@ -42,6 +42,13 @@ function Services() {
           <ServicesCard
             imgPath={emoji1}
             heading="2D Animations"
+            content="Html css kjkdjf jksdfjk s jfdkfj skjfsdkfj  jdskfjsk"
+          />
+        </Grid>
+        <Grid item>
+          <ServicesCard
+            imgPath={emoji1}
+            heading="Wireframes Design"
             content="Html css kjkdjf jksdfjk s jfdkfj skjfsdkfj  jdskfjsk"
           />
         </Grid>

@@ -1,13 +1,14 @@
-import { Grid, Typography } from '@mui/material'
+import { Grid, Link, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 import boyImg from '../../assets/images/boy.png'
 import Social from '../Social/Social';
 import StyledButton from '../StyledButton/StyledButton';
+import resume from '../../assets/pdf/my_resume.pdf'
 
 function Intro() {
   return (
-    <Grid container sx={{ mt: 8, }}>
+    <Grid container sx={{ mt: 8, }} id="intro">
       {/* intro text button and social icons */}
       <Grid item md={6} >
         <Typography component="h1" variant='h2'>
@@ -20,7 +21,9 @@ function Intro() {
           }}
         >
           <StyledButton name="Hire Me" /> &nbsp;&nbsp;&nbsp;&nbsp;
-          <StyledButton name="Download CV" />
+          <Link href={resume} download sx={{ textDecoration: 'none' }}>
+            <StyledButton name="Download CV" />
+          </Link>
         </Box>
         {/* social icons left side */}
         <Social />

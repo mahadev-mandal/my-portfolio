@@ -3,7 +3,13 @@
   font-size: 20px;
   padding: 10px;
   font-size: Gumela;
+  cursor: pointer;
 }
-*{
+
+.navLink:hover {
+  color: #fca61f;
+}
+
+* {
   font-size: Gumela;
 }

@@ -1,25 +1,32 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
-import { Swiper, SwiperSlide } from "swiper/react"
+import './RecentProjects.css';
+import kbcqna from '../../assets/images/kbcqna.png'
+import byaj from '../../assets/images/byaj.png'
+// import play_card from '../../assets/images/play_card.png'
 
 function RecentProjects() {
   return (
-    <Box>
-      <Typography variant="h4" textAlign="center">
-        Recent Projects
+    <Box class='portfolio' id="recent_projects">
+      <Typography variant="h3" component="h2" textAlign="center">
+        <span>Recent Projects</span> <br />
+        <span style={{ color: "#fca61f" }}>Portfolio</span>
       </Typography>
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        grabCursor={true}
-        className="portfolio-slider"
-      >
-        <SwiperSlide>
-          <img src="https://images.unsplash.com/photo-1655068885001-0fea2b5cc028?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" />
-        </SwiperSlide>
-        
-      </Swiper>
-    </Box>
+      <Grid container spacing={3}>
+        <Grid item md={4} xs={12} sx={{}}>
+          <img src={kbcqna} alt="" />
+        </Grid>
+        <Grid item md={4} xs={12} sx={{}}>
+          <img src={byaj} alt="" />
+        </Grid>
+        <Grid item md={4} xs={12} sx={{}}>
+          <img src={byaj} alt="" />
+        </Grid>
+        {/* <Grid item md={4} xs={12} sx={{}}>
+          <img src={play_card} alt="" />
+        </Grid> */}
+      </Grid>
+    </Box >
   )
 }
 

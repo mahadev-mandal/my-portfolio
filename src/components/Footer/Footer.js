@@ -5,7 +5,7 @@ import Social from "../Social/Social";
 
 function Footer() {
   return (
-    <Box
+    <Box id="footer"
       sx={{
         display: "flex",
         alignItems: "center",

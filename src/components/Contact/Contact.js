@@ -1,13 +1,11 @@
-import { useTheme } from '@emotion/react'
-import { Box, Grid, TextareaAutosize, TextField, Typography } from '@mui/material'
+import { Box, Grid, TextField, Typography } from '@mui/material'
 import React from 'react'
 import StyledButton from '../StyledButton/StyledButton'
 
 function Contact() {
-  const theme = useTheme();
 
   return (
-    <Grid container sx={{ mt: 10 }}>
+    <Grid container sx={{ pt: 10 }} id="contact">
       <Grid item xs={12} md={5}>
         <Typography variant='h3'>
           <span>Get in Touch</span><br />

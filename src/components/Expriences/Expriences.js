@@ -5,12 +5,13 @@ import './Expriences.css'
 
 function Expriences() {
   return (
-    <Box
+    <Box id="exprience"
       sx={{
         display: 'flex',
         direction: 'row',
         alignItems: 'center',
         justifyContent: 'center',
+        p:9,
       }}
     >
       <CircleWithLabel label1="Years" label2="Exprience" num={1} />
