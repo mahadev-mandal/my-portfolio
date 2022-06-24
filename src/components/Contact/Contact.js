@@ -32,12 +32,16 @@ function Contact() {
             mb: 5,
           }}
         /><br />
-        <TextareaAutosize
-          minRows={4}
+        <TextField
           variant='outlined'
           placeholder='Message'
-          style={{ width: '100%', background: theme.palette.mode === 'dark' ? '#212121' : 'white' }}
-        /><br />
+          multiline
+          sx={{
+            width: '100%',
+            mb: 5,
+          }}
+        />
+        <br />
         <Box sx={{ textAlign: 'center' }}>
           <StyledButton name="Send" num="" />
         </Box>
