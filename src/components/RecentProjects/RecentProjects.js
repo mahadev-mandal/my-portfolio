@@ -8,7 +8,7 @@ import byaj from '../../assets/images/byaj.png'
 function RecentProjects() {
   return (
     <Box class='portfolio' id="recent_projects">
-      <Typography variant="h3" component="h2" textAlign="center">
+      <Typography variant="h3" component="h2" textAlign="center" className='section-heading'>
         <span>Recent Projects</span> <br />
         <span style={{ color: "#fca61f" }}>Portfolio</span>
       </Typography>

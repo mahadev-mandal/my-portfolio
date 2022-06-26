@@ -6,7 +6,7 @@ import emoji1 from "../../assets/images/emoji1.png";
 function Services() {
   return (
     <Box sx={{ mt: 10 }} id="services">
-      <Typography variant="h3" component="h2" textAlign="center">
+      <Typography variant="h3" component="h2" textAlign="center" className='section-heading'> 
         <span>My Awesome</span> <br />
         <span style={{ color: "#fca61f" }}>Services</span>
       </Typography>
@@ -16,40 +16,40 @@ function Services() {
         excepturi rerum corrupti repudiandae, officia quia sit fugiat recusandae
         vero unde deserunt quod.
       </Typography>
-      <Grid container spacing={4} sx={{mt:8}} justifyContent="center">
+      <Grid container spacing={4} sx={{ mt: 8 }} justifyContent="center">
         <Grid item>
           <ServicesCard
             imgPath={emoji1}
             heading="Web Developer"
-            content="Html css kjkdjf jksdfjk s jfdkfj skjfsdkfj  jdskfjsk"
+            content="HTML/CSS/Javascript/React.js/Next.js "
           />
         </Grid>
         <Grid item>
           <ServicesCard
             imgPath={emoji1}
             heading="App Developer"
-            content="Html css kjkdjf jksdfjk s jfdkfj skjfsdkfj  jdskfjsk"
+            content="React Native"
           />
         </Grid>
         <Grid item>
           <ServicesCard
             imgPath={emoji1}
             heading="UI/UX Design"
-            content="Html css kjkdjf jksdfjk s jfdkfj skjfsdkfj  jdskfjsk"
-          />
-        </Grid>
-        <Grid item>
-          <ServicesCard
-            imgPath={emoji1}
-            heading="2D Animations"
-            content="Html css kjkdjf jksdfjk s jfdkfj skjfsdkfj  jdskfjsk"
+            content="Adobe Illustrate"
           />
         </Grid>
         <Grid item>
           <ServicesCard
             imgPath={emoji1}
             heading="Wireframes Design"
-            content="Html css kjkdjf jksdfjk s jfdkfj skjfsdkfj  jdskfjsk"
+            content="Balsamiq Wireframes"
+          />
+        </Grid>
+        <Grid item>
+          <ServicesCard
+            imgPath={emoji1}
+            heading="2D Animations"
+            content="Adobe Animate"
           />
         </Grid>
       </Grid>

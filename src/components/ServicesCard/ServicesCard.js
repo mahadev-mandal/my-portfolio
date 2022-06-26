@@ -13,7 +13,7 @@ export default function ServicesCard({ imgPath, heading, content }) {
         border: "8px solid #fed79a",
         borderRadius: 5,
         textAlign: "center",
-        p: 5,
+        pt:3,
       }}
     >
       <Box>
@@ -27,7 +27,7 @@ export default function ServicesCard({ imgPath, heading, content }) {
           {content}
         </Typography>
         <Button size="small" sx={{ mt: 2 }}>
-          Learn More
+          More
         </Button>
       </CardContent>
     </Card>

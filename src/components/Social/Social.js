@@ -23,16 +23,16 @@ function Social() {
         mb: 5,
       }}
     >
-      <a href="/">
+      <a href="https://github.com/mahadev-mandal" target="_blanck">
         <SocialIcon src={githubLogo} alt="" xs />
       </a>
-      <a href="/">
+      <a href="https://stackoverflow.com/users/14272611/mahadev-mandal" target="_blanck">
         <SocialIcon src={stackoverflowLogo} alt="" />
       </a>
-      <a href="/">
+      <a href="https://linkedin.com/in/Mahadev-mandal-7314a5209" target="_blanck">
         <SocialIcon src={linkedinLogo} alt="" />
       </a>
-      <a href="/">
+      <a href="https://www.instagram.com/" target="_blanck">
         <SocialIcon src={instagramLogo} alt="" />
       </a>
     </Box>

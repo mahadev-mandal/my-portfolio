@@ -7,7 +7,7 @@ function Contact() {
   return (
     <Grid container sx={{ pt: 10 }} id="contact">
       <Grid item xs={12} md={5}>
-        <Typography variant='h3'>
+        <Typography variant='h3' className='section-heading'>
           <span>Get in Touch</span><br />
           <span style={{ color: '#fca61f' }}>Contact me</span>
         </Typography>
@@ -18,7 +18,7 @@ function Contact() {
           placeholder='Full name'
           sx={{
             width: '100%',
-            mb: 5,
+            mb: 3,
 
           }}
         /><br />
@@ -27,7 +27,7 @@ function Contact() {
           placeholder='Email'
           sx={{
             width: '100%',
-            mb: 5,
+            mb: 3,
           }}
         /><br />
         <TextField
@@ -36,7 +36,7 @@ function Contact() {
           multiline
           sx={{
             width: '100%',
-            mb: 5,
+            mb: 3,
           }}
         />
         <br />
