@@ -1,12 +1,8 @@
-import { Button } from '@mui/material'
-import React from 'react'
+import { Button } from "@mui/material";
+import React from "react";
 
-function StyledButton({name}) {
-  return (
-    <Button variant='outlined'>
-      {name}
-    </Button>
-  )
+function StyledButton({ name }) {
+  return <Button variant="outlined">{name}</Button>;
 }
 
-export default StyledButton
+export default StyledButton;
