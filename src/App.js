@@ -18,7 +18,6 @@ function App() {
   const darkModeToggle = () => {
     setIsDarkMode(!isDarkMode);
   }
-  console.log('kjdkjjf')
   return (
     <>
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
