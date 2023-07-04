@@ -12,7 +12,7 @@ function Intro() {
       {/* intro text button and social icons */}
       <Grid item md={6} >
         <Typography component="h1" variant='h2' className='section-heading'>
-          <span>Hy! I Am</span> <br />
+          <span>Hy! I Am mahadev</span> <br />
           <span style={{ color: '#fca61f', }}>Mahadev Mandal</span>
         </Typography>
         <Box
